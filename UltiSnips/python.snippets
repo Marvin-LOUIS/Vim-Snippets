@@ -1,0 +1,49 @@
+snippet #! "shebang" b
+#!/usr/bin/env python
+endsnippet
+
+snippet class "class name {...}" b
+class ${1:name}:
+    ${2:# class variables}
+
+    def __init__(self,${3:parameters}):
+        ${0:${VISUAL:# enter your code here}}
+endsnippet
+
+snippet def "def name(parameter) {...}" b
+def ${1:name}(${2:parameters}):
+    ${0:${VISUAL:# enter your code here}}
+endsnippet
+
+snippet for "for i in sequence {...}" b
+for ${1:i} in ${2:sequence}:
+    ${0:${VISUAL:# enter your code here}}
+endsnippet
+
+snippet while "while expression {...}" b
+while ${1:expression}:
+    ${0:${VISUAL:# enter your code here}}
+endsnippet
+
+snippet if "if (condition) {...}" b
+if ${1:True}:
+    ${0:${VISUAL:# enter your code here}}
+endsnippet
+
+snippet elif "elif (condition) {...}" b
+elif ${1:True}:
+    ${0:${VISUAL:# enter your code here}}
+endsnippet
+
+snippet else "else (condition) {...}" b
+else:
+    ${0:${VISUAL:# enter your code here}}
+endsnippet
+
+snippet main "" b
+def main():
+    ${0:${VISUAL:# enter your code here}}
+
+if __name__ == "__main__":
+    main()
+endsnippet

@@ -1,0 +1,21 @@
+snippet html "create the base structure of an html file." b
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>${1:title}</title>
+		<meta name="author" content="${2:author}">
+		<meta name="description" content="${3:description}">
+		<link rel="stylesheet" href="css/styles.css?v=1.0">
+	</head>
+
+	<body>
+		${0:${VISUAL:<!-- Insert your code here -->}}
+	</body>
+</html>
+endsnippet
+
+snippet tag "expand tag" b
+<${1:tag}>$2</$1>
+endsnippet

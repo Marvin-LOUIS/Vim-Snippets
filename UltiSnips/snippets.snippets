@@ -1,0 +1,11 @@
+snippet snippet "add new snippet" b
+`!p snip.rv = "snippet"` ${1:tab_trigger} "${2:description}" ${3:b}
+${0:${VISUAL}}
+`!p snip.rv = "endsnippet"`
+endsnippet
+
+snippet global "Global snippet" b
+`!p snip.rv = "global"` !p
+${0:${VISUAL}}
+`!p snip.rv = "endglobal"`
+endsnippet
